@@ -36,7 +36,7 @@ export const Github = () => (
     </svg>
   );
 
-export const Linkedin = () => (
+export const LinkedIn = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -50,13 +50,21 @@ export const Linkedin = () => (
 //Taken from font awesome:
 
 export const Email = () => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-    >
-      <path d="M21 4H3c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h18c1.104 0 2-.896 2-2V6c0-1.104-.896-2-2-2zm-1.187 1.866L12 11.936l-7.813-6.07C4.007 5.435 4 5.594 4 5.757V18h16V5.757c0-.163-.007-.322-.187-.891z"/>
-    </svg>
+    <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    height="24" 
+    width="24"
+     viewBox="0 0 512 512">
+    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
   );
+
+export const Resume = () => (
+    <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    height="24"
+    width="24" 
+    viewBox="0 0 384 512">
+    <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>
+
+)
   
