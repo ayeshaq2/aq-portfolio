@@ -26,23 +26,23 @@ const Footer = () => {
       <>
       <div className='flex backdrop-blur space-x-20 justify-center py-4 pb-5'>
 
-      <Link href='https://github.com/ayeshaq2'>
+      <Link className='hover:opacity-100 opacity-75' href='https://github.com/ayeshaq2'>
           <Github></Github>
       </Link>
       
-      <Link href='https://drive.google.com/file/d/1foBEmJMUvAmSvwgHJzONYU4VYudbWU4_/view?usp=sharing'>
+      <Link className='hover:opacity-100 opacity-75' href='https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=sharing'>
          <Resume></Resume>
       </Link>
 
-      <Link href='https://www.linkedin.com/in/ayeshaqaisar/'>
+      <Link className='hover:opacity-100 opacity-75' href='https://www.linkedin.com/in/ayeshaqaisar/'>
          <LinkedIn></LinkedIn>
       </Link>
 
-      <Link href='https://www.instagram.com/ayesha.qaisarr/'>
+      <Link className='hover:opacity-100 opacity-75' href='https://www.instagram.com/ayesha.qaisarr/'>
          <Instagram></Instagram>
       </Link>
 
-      <Link href='mailto:ayeshaqaisar002@gmail.com?subject=From Your Portfolio!&body='>
+      <Link className='hover:opacity-100 opacity-75' href='mailto:ayeshaqaisar002@gmail.com?subject=From Your Portfolio!&body='>
          <Email></Email>
       </Link>
       
