@@ -1,6 +1,7 @@
 
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Stack} from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Stack, Button, ButtonGroup, Divider} from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 
 
 /**
@@ -41,36 +42,39 @@ let projects = [
 
 const Cards = () =>{
     return(
-        projects.forEach( (project) =>{
-            <Card maxW="sm">
-                <CardBody>
-                    <img src="../.images/poster.png"/>
+        <div className='ms-8 w-3/4 relative grid grid-cols-2 gap-10 justify-center' >
 
-                    <Stack mt='6' spacing='3'>
-                        <h2>{project.name}</h2>
-                        <p>{project.description}</p>
-
-                       {project.award &&(
-                         <p className='text-blue text-xl'>{project.award}</p>
-
-                       )}
-
-
-                    </Stack>
-
-
-                </CardBody>
-
-
-
-
-            </Card>
-        }
-
-        )
-
-
-    )
+       { projects.map( (project, index) =>(
+            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing='6'>
+        <Card key={index}  className=" w-50 border border-red-800 flex flex-col-relative min-w-0 w-25 bg-white px-4 py-2 rounded-md justify-center" style={{ margin: '8px' }} >
+              <img src=".././images/poster.png"/>
+            <CardHeader className="mb-4 flex justify-center">
+                <h2 className="text-red-600 text-2xl font-bold py-4 px-4 relative justify-center" >{project.name}</h2>
+            </CardHeader>
+        <CardBody className="text-gray-700 px-4 py-1">
+            <Stack mt='6' spacing='3'>
+            <p>{project.description}</p>
+            <p className='text-blue-400 text-xl'>
+                $450
+            </p>
+            </Stack>
+        </CardBody>
+        <Divider />
+        <CardFooter  className="align-right justify-right items-right py-4">
+            <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue'>
+                Buy now
+            </Button>
+            <Button variant='ghost' colorScheme='blue'>
+                Add to cart
+            </Button>
+            </ButtonGroup>
+        </CardFooter>
+        </Card>
+            </SimpleGrid>
+       
+    ))}
+        </div>)
 }
 
 export default Cards
