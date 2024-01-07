@@ -1,6 +1,9 @@
 import React from 'react'
 import {Chrono} from "react-chrono";
 import {Poster} from '.././Icons/icons.js'
+import {Link} from '@chakra-ui/react'
+
+
 
 /**
  * Using react-chrono library for a timeline
@@ -21,7 +24,7 @@ let experiences = [{
         source:{
             url: "https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=drive_link"
         },
-        type: 'IMAGE'
+        type: 'ICON'
     }
 
     
@@ -49,7 +52,9 @@ let experiences = [{
 const Timeline =() =>{
     return(
         <div className='w-5/6 pt-5' >
-             <Chrono items={experiences} mode="VERTICAL_ALTERNATING" enableOutline theme={{
+             <Chrono items={experiences}  mode="VERTICAL_ALTERNATING" enableOutline 
+             mediaSettings={{ }} 
+             theme={{
                 primary:"black",
                 secondary:'transparent', 
                 titleColor:'black',
@@ -59,9 +64,26 @@ const Timeline =() =>{
 
 
              }}
+             
 
              >
-                 {(item, idx) => {
+                <div className='p-5'>
+                    <Link href="https://www.google.com">
+                        <img src="https://fontawesome.com/icons/chart-simple?f=classic&s=solid"/>
+                        
+                    </Link>
+                    
+                    {/* <Link href="https://www.instagram.com"><a>123</a></Link> */}
+                    
+                </div>
+               
+
+                <div>
+                    two
+                </div>
+
+
+                 {/* {(item, idx) => {
                     console.log(item);
                    
                     <div className="p-4">
@@ -69,14 +91,16 @@ const Timeline =() =>{
                         <h3 className="text-lg font-semibold">{item.cardTitle}</h3>
                         <h4 className="text-md">{item.cardSubtitle}</h4>
                         <p>{item.cardDetailedText}</p>
+                        <img src="https://fontawesome.com/icons/square-poll-vertical?f=classic&s=solid"/>
                         
-                        {/* Conditionally render the Poster icon */}
                         {item.showPosterIcon && (
-                         <i class="fa-solid fa-square-poll-vertical"></i>
+                         <img src="https://fontawesome.com/icons/square-poll-vertical?f=classic&s=solid"/>
                             //<FontAwesomeIcon icon="fa-solid fa-square-poll-vertical" />
                         )}
-                    </div>
-                 }}
+                        
+                    </div> }}
+                  */}
+                  
                
                  
              </Chrono>
