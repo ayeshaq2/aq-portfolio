@@ -3,12 +3,13 @@
 import Image from 'next/image'
 import { Link } from '@chakra-ui/react'
 import Footer from './components/footer/Footer.js'
+import Timeline from './components/timeline/Timeline.js'
 import { Card, CardHeader, CardBody, CardFooter, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-r from-purple-200 to-pink-100 pb-10 ">
-      <div class="flex justify-center pt-10 ">
+      <div className="flex justify-center pt-10 ">
 
       <div className='w-3/5  pt-5 rounded-md justify-center align-center items-center'>
         <div className='text-black'>
@@ -90,6 +91,7 @@ export default function Home() {
 
     <div>
       <h2 className='pt-10 ms-8 text-2xl'>Experience</h2>
+      <Timeline/>
 
 
 
