@@ -5,6 +5,7 @@ import { Link } from '@chakra-ui/react'
 import Footer from './components/footer/Footer.js'
 import Timeline from './components/timeline/Timeline.js'
 import { Card, CardHeader, CardBody, CardFooter, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
+import Cards from './components/cards/Cards.js'
 
 export default function Home() {
   return (
@@ -81,6 +82,7 @@ export default function Home() {
 
     <div>
       <h2 className='pt-10 ms-8 text-2xl'>Projects</h2>
+      <Cards/>
 
 
     </div>
