@@ -34,8 +34,8 @@ let projects = [
         exefile:"",
         devpost:false,
         devpostLink:'',
-        photo:"",
-        linkin:true,
+        photo:"/images/sh.png",
+        extraText:"(In progress)"
 
     },
 
@@ -51,7 +51,7 @@ let projects = [
         github:true,
         githubLink:"https://github.com/ayeshaq2/HeroHub",
         exefile:"",
-        photo:"",
+        photo:"images/herohub.png",
 
     },
 
@@ -105,7 +105,7 @@ let projects = [
         devpost:false,
         extraText:"(EXE file coming soon!)",
         devpostLink:'',
-        photo:"",
+        photo:"/images/arraysimulator.png",
         
 
     },
@@ -119,11 +119,11 @@ let projects = [
         +"to nearby emergencies.\n",
                     "• Designed high-fidelity Figma mockups for the UI/UX and implemented it using functional React.js components. ",],
         github:true,
-        githubLink:"abs",
+        githubLink:"https://github.com/mackvv/Heart-AtTech",
         exefile:"",
         devpost:true,
         devpostLink:'https://devpost.com/software/heart-attech',
-        photo:"",
+        photo:"/images/heartattech.png",
 
     },
 ]
@@ -166,17 +166,20 @@ const Cards = () =>{
             <div>
                 <p className='text-sm italic drop-shadow-xl text-black pt-5'>{project.date}</p>
             </div>
+            <div>
+                <p className='font-medium italic drop-shadow-xl text-black pt-5'>{project.extraText}</p>
+            </div>
 
 
             </Stack>
         </div>
         <div />
         <div  className="align-right justify-right items-right py-4">
-        <div className='flex justify ms-5' spacing='10'>
+        <div className='flex justify ms-4' spacing='20'>
             
             {project.github &&(
 
-                <Link href={project.githubLink}><Github/></Link>
+                <Link className='mr-3' href={project.githubLink}><Github/></Link>
             )}
             {project.devpost &&(
                 <Link href={project.devpostLink}><Devpost/></Link>
