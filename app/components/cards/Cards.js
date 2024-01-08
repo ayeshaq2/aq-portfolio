@@ -1,7 +1,17 @@
 
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Stack, Button, ButtonGroup, Divider} from '@chakra-ui/react'
-import { SimpleGrid } from '@chakra-ui/react'
+import { Stack, Link} from '@chakra-ui/react'
+
+import {
+    IconRight, 
+    LinkedIn,
+    Github,
+    Instagram,
+    Email,
+    Resume,
+    Devpost,
+} from '.././Icons/icons.js'
+//import hackers from './hackers.jpg'
 
 
 /**
@@ -12,68 +22,172 @@ import { SimpleGrid } from '@chakra-ui/react'
 
 let projects = [
     {
-        name:"Memory Lane",
-        date:"November 2023",
-        technologies:['a','b','c'],
-        award:"Sunlife's Best Health Hack @ Hack Western 10",
-        description:"Project at hackathon",
-        github:"link",
+        name:"SheHacks 8",
+        date:"Oct 2023 - Present",
+        technologies:['Next.js','MongoDB','Nodemailer', 'DigitalOcean','Javascript'],
+        description:["• Collaborated with a team to develop the SheHacks web application for ‘Women in Tech Society’s’ annual hackathon to service over 300 users.",
+                    "• Utilized React,Next.js to implement a user-friendly front-end, and Node.js for the backend, to be deployed using DigitalOcean",
+                     "• Designed a password recovery system by ensuring user-specific URL generation, sent via email. ",
+                    "• Currently adding on security measures to ensure user-data privacy and integration"],
+        github:false,
+        githubLink:"abs",
         exefile:"",
-        devpost:"",
+        devpost:false,
+        devpostLink:'',
+        photo:"",
+        linkin:true,
+
+    },
+
+    {
+        name:"HeroHub",
+        date:"Oct - Nov 2023",
+        technologies:['Next.js','MySQL','Express.js','Node.js', 'ReST API', 'React'],
+        description:["• Designed a comprehensive web application for superhero character data management and retrieval.",
+                    "• Implemented a REST API with an integrated MySQL database, for major functionality of the application.",
+                     "• Developed a client-side interface using pure HTML/CSS/JavaScript and Next.js for enhanced user-interaction.",
+                    "• Ensured data integrity and security by applying input sanitization techniques, preventing malicious attacks on the API.",
+                    "• Implemented an authentication protocol for differentiated functionality resulting in enhanced usability and security."],
+        github:true,
+        githubLink:"https://github.com/ayeshaq2/HeroHub",
+        exefile:"",
         photo:"",
 
     },
+
     {
         name:"Memory Lane",
-        date:"November 2023",
+        date:"Nov 2023",
+        technologies:['Next.js','MongoDB','Express.js', 'Flask', 'Infobip', 'google-web-speech-api'],
         award:"Sunlife's Best Health Hack @ Hack Western 10",
-        description:"Project at hackathon"
+        description:["• Developed a web app designed to assist individuals with dementia in remembering daily tasks, medications and dates.",
+                    "• Utilizied the google-web-speech-api to transcribe voice recording to text for users to access a personalized library of media",
+                    "• Implemented a friendly user interface through creating components in Next.js framework",
+                    "• The project also implements the infobip API to allow for customized text messaging as reminders"
+                    ],
+        github:true,
+        githubLink:"https://github.com/lelalou/MemoryLane",
+        exefile:"",
+        devpost:true,
+        devpostLink:'https://devpost.com/software/memory-lane-84kcrl',
+        photo:"/images/memorylane.jpg",
+        
 
     },
+    
     {
-        name:"Memory Lane",
-        date:"November 2023",
-        award:"Sunlife's Best Health Hack @ Hack Western 10",
-        description:"Project at hackathon"
+        name:"Hackathon Catalogue",
+        date:"Oct - Nov 2023",
+        technologies:['React','MySQL','Express.js','Node.js','Git'],
+        description:[" • Designed and implemented a comprehensive Database Management System (DBMS) using MySQL, coupled with a user-friendly web application.", 
+                    "• Collaborated within a team to gather and analyze requirements for an Online Hackathon Catalogue System",
+                     "• Applied normalization techniques to enhance data integrity, minimize redundancy, and optimize overall performance",
+                    "• Developed the MySQL database system from scratch, implementing the relational model and ensuring seamless integration with the DBMS",
+                    "• Integrated database functionalities into the web app, allowing users to perform operations such as data insertion, retrieval, update and deletion"],
+        github:true,
+        githubLink:"https://github.com/AlexandraLHeureuxECE/assignment-3-group20",
+        exefile:"",
+        photo:"",
+        linkin:true,
 
-    }
+    },
+
+    {
+        name:"Array Sorting Simulator",
+        date:"Jan 2023",
+        technologies:['Java','JavaFX','UML Diagrams', 'multithreading',],
+        description:["• Developed an interactive JavaFX application to simulate and compare the efficiency of sorting algorithms.",
+                    "• Implemented the sorting algorithms in Java, following previously defined UML diagrams for the application structure.",
+                    "• Used multi-threading to accurately represent real-time sorting progress. "],
+        github:true,
+        githubLink:"https://github.com/ayeshaq2/ArraySimulator",
+        exefile:"",
+        devpost:false,
+        extraText:"(EXE file coming soon!)",
+        devpostLink:'',
+        photo:"",
+        
+
+    },
+
+    {
+        name:"Heart AtTech",
+        date:"Nov 2022",
+        award:"Best Health Hack @ Hack Western 9",
+        technologies:['Figma','React','Firebase'],
+        description:["• Developed an application to reduce EMS wait times by 80% through empowering CPR/AED certified individuals to respond"
+        +"to nearby emergencies.\n",
+                    "• Designed high-fidelity Figma mockups for the UI/UX and implemented it using functional React.js components. ",],
+        github:true,
+        githubLink:"abs",
+        exefile:"",
+        devpost:true,
+        devpostLink:'https://devpost.com/software/heart-attech',
+        photo:"",
+
+    },
 ]
 
 
 const Cards = () =>{
     return(
-        <div className='ms-8 w-3/4 relative grid grid-cols-2 gap-10 justify-center' >
+        <div className='flex justify-center'>
+        <div className='w-5/6 box-border mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 grid-flow-row-dense flex-wrap align-items-start ' >
 
        { projects.map( (project, index) =>(
-            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing='6'>
-        <Card key={index}  className=" w-50 border border-red-800 flex flex-col-relative min-w-0 w-25 bg-white px-4 py-2 rounded-md justify-center" style={{ margin: '8px' }} >
-              <img src=".././images/poster.png"/>
-            <CardHeader className="mb-4 flex justify-center">
-                <h2 className="text-red-600 text-2xl font-bold py-4 px-4 relative justify-center" >{project.name}</h2>
-            </CardHeader>
-        <CardBody className="text-gray-700 px-4 py-1">
-            <Stack mt='6' spacing='3'>
-            <p>{project.description}</p>
-            <p className='text-blue-400 text-xl'>
-                $450
-            </p>
+            // <SimpleGrid spacing='3' className='flex flex-col justify-between'>
+        <div key={index}  className=" flex flex-col border-2 border-pink-800 bg-white rounded-md shadow justify flex-wrap"  >
+            <img className='object-cover h-80 w-full mt-0 ' src={project.photo} />
+              
+            <div className=" flex justify-right px-2">
+                <h2 className="flex text-rose-800 text-2xl font-bold pt-2 " >{project.name}</h2>
+            </div>
+        <div className="text-gray-700 ms-3 px-4 py-1">
+        <div className='flex flex-wrap'>
+                {project.technologies?.map((tech, idx)=>(
+                    <span key={idx} className='text-wrap'>
+                         <p  className='text-sm text-white font-semibold bg-slate-600 inline-block mr-2 px-2 rounded-sm text-wrap'>{tech} </p>
+                    </span>
+                ))}
+              </div>
+            <Stack mt='3' spacing='2'>
+                {project.award&&(
+                    <p className='text-red-800 opacity-75 text-sm italic font-medium'> {project.award} </p>
+                )}
+           
+            <div className='flex flex-wrap justify '>
+                <ul>
+                    {project.description?.map((item)=>(
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+
+            <div>
+                <p className='text-sm italic drop-shadow-xl text-black pt-5'>{project.date}</p>
+            </div>
+
+
             </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter  className="align-right justify-right items-right py-4">
-            <ButtonGroup spacing='2'>
-            <Button variant='solid' colorScheme='blue'>
-                Buy now
-            </Button>
-            <Button variant='ghost' colorScheme='blue'>
-                Add to cart
-            </Button>
-            </ButtonGroup>
-        </CardFooter>
-        </Card>
-            </SimpleGrid>
+        </div>
+        <div />
+        <div  className="align-right justify-right items-right py-4">
+        <div className='flex justify ms-5' spacing='10'>
+            
+            {project.github &&(
+
+                <Link href={project.githubLink}><Github/></Link>
+            )}
+            {project.devpost &&(
+                <Link href={project.devpostLink}><Devpost/></Link>
+            )}
+            </div>
+        </div>
+        </div>
+            // </SimpleGrid>
        
     ))}
+        </div>
         </div>)
 }
 
