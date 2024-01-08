@@ -22,7 +22,7 @@ let experiences = [{
     media:{
         name:"Research Poster - Summer Term conclusion",
         source:{
-            url: "https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=drive_link"
+            url:'.././images/hackers.jpg'
         },
         type: 'ICON'
     }
@@ -69,7 +69,7 @@ const Timeline =() =>{
              >
                 <div className='p-5'>
                     <Link href="https://www.google.com">
-                        <img src="https://fontawesome.com/icons/chart-simple?f=classic&s=solid"/>
+                        <img src=".././images/hackers.jpg"/>
                         
                     </Link>
                     
