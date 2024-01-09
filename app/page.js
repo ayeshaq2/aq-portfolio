@@ -9,7 +9,7 @@ import Cards from './components/cards/Cards.js'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-r from-purple-200 to-pink-100 pb-10 ">
+    <main className="min-h-screen bg-gradient-to-r from-purple-200 to-pink-100 pb-3 ">
       <div className="flex justify-center pt-10 ">
 
       <div className='w-3/5  pt-5 rounded-md justify-center align-center items-center'>
@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className='text-4xl bg-gradient-to-r from-purple-800 via-indigo-800 to-rose-600 bg-clip-text text-transparent flex justify-right font-bold italic '>hello!</h1>
             <p className='flex justify-center'>My name is </p><h2 className='text-5xl flex justify-center font-bold'>Ayesha Qaisar</h2>
             <p className='text-sm text-center italic py-5'>Welcome to my portfolio!  </p>
-            <p className='text-justify'>I'm a third year software engineering student at <br></br><a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </p>
+            
         </div> </div>
 
         
@@ -42,7 +42,7 @@ export default function Home() {
       
    </div>
 
-   <h2 className='pt-4 ms-40 text-2xl'>About Me</h2>
+   <h2 className='pt-4 ms-20 text-2xl'>About Me</h2>
    <div id="about-me" className='flex justify-center pt-5'>
    
    <br/>
@@ -51,18 +51,21 @@ export default function Home() {
     <div className='border border-slate-400 rounded-xl w-4/5 p-3 bg-purple-100 '>
 
       <Card>
-        <CardHeader><Heading>About Me</Heading></CardHeader>
+        
 
         <CardBody>
           <Stack divider = {<StackDivider />} spacing='4'>
             <Box>
               <Heading  size='xs' textTransform='uppercase'></Heading>
-              <Text pt='2' fontSize='sm'>Example</Text>
+              
+              <p className='text-justify'>I'm a third year software engineering student at <a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </p>
+              <p>While I was terrified to take my first (mandatory) coding class in first year, I've come to really enjoy coding and developing solutions. </p>
+              <p>I'm also interested in business analysis and, as everyone, have recently tried to get my foot in AI through my research experience.</p>
+              <p>In my free time, I like to read (mostly fiction!), do calligraphy and even go on beautiful long hikes!</p>
+              <p>If you have similar interests or want to chat about my experiences, please feel free to reach out to me at ayeshaqaisar002@gmail.com !</p>
+              <p className='italic'>(Updated version of this website coming soon!)</p>
             </Box>
-            <Box>
-              <Heading  size='xs' textTransform='uppercase'>blabla</Heading>
-              <Text pt='2' fontSize='sm'>Example</Text>
-            </Box>
+            
 
 
           </Stack>
@@ -81,7 +84,7 @@ export default function Home() {
    <div id="projects">
 
     <div>
-      <h2 className='pt-10 ms-8 text-2xl'>Projects</h2>
+      <h2 className='pt-10 ms-20 text-2xl'>Projects</h2>
       <Cards/>
 
 
@@ -93,53 +96,31 @@ export default function Home() {
 
     <div>
       <h2 className='pt-10 ms-8 text-2xl'>Experience</h2>
-      <Timeline/>
+      <div className='flex justify-center'>
+        <Timeline/>
+      </div>
+      
 
 
 
 
     </div>
     
-   </div>
+   </div> 
 
-   <div id="contact">
+   {/* <div id="contact">
 
     <div>
-      <h2 className='pt-10 ms-8 text-2xl'>Contact</h2>
+      <h2 className='pt-10 ms-20 text-2xl'>Contact</h2>
 
 
     </div>
     
-   </div>
-   <div id="contact">
-
-    <div>
-      <h2 className='pt-10 ms-8 text-2xl'>Contact</h2>
+   </div> */}
+   
 
 
-    </div>
-    
-   </div><div id="contact">
-
-<div>
-  <h2 className='pt-10 ms-8 text-2xl'>Contact</h2>
-
-
-</div>
-
-</div><div id="contact">
-
-<div>
-  <h2 className='pt-10 ms-8 text-2xl'>Contact</h2>
-
-
-</div>
-
-</div>
-
-
-
-   <div id='footer' className='fixed bottom-0 left-0 w-full'>
+   <div id='footer' className=' fixed bottom-0 left-0 w-full'>
    <Footer/>
    </div>
 
