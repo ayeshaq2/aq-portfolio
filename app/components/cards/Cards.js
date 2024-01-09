@@ -132,7 +132,7 @@ let projects = [
 const Cards = () =>{
     return(
         <div className='flex justify-center'>
-        <div className='w-5/6 box-border mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 grid-flow-row-dense flex-wrap align-items-start ' >
+        <div className='w-4/5 box-border mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 grid-flow-row-dense flex-wrap align-items-start ' >
 
        { projects.map( (project, index) =>(
             // <SimpleGrid spacing='3' className='flex flex-col justify-between'>
