@@ -17,33 +17,58 @@ let experiences = [{
     title:"May 2023 - Present",
     cardTitle:"Undergraduate Research Fellowship",
     cardSubtitle:"Faculty of Engineering, Western University - London, Canada",
-    cardDetailedText:"Working in AI ",
+    cardDetailedText:["• Received the Bill and Barbara Etherington fellowship, awarded to the top 4 research students, by achieving a 75%+ average.",
+                    "• Conducted in-depth NLP research on Topic Modelling, utilizing NLP libraries and algorithms to analyse student survey data.",
+                " • Developed web-scrapers to create SWKT (Software keyword Text), a unique, undergraduate software engineering dataset.",
+            "• Currently conducting further research in machine learning to train an AI transformer model for the software domain"],
     showPosterIcon: true,
-    media:{
-        name:"Research Poster - Summer Term conclusion",
-        source:{
-            url:'.././images/hackers.jpg'
-        },
-        type: 'ICON'
-    }
+    
 
     
     
 
 },
+{
+    title:"Dec 2023 - Present",
+    cardTitle:"ADA Program Mentor",
+    cardSubtitle:"Women In Tech Society - London, ON, Canada",
+    cardDetailedText:["• Received the Bill and Barbara Etherington fellowship, awarded to the top 4 research students, by achieving a 75%+ average.",
+                    "• Conducted in-depth NLP research on Topic Modelling, utilizing NLP libraries and algorithms to analyse student survey data.",
+                " • Developed web-scrapers to create SWKT (Software keyword Text), a unique, undergraduate software engineering dataset.",
+            "• Currently conducting further research in machine learning to train an AI transformer model for the software domain"],
+
+
+},
+{
+    title:"Feb 2022 - Present",
+    cardTitle:"Student Ambassador",
+    cardSubtitle:"hEr VOLUTION - Ontario, Canada",
+    cardDetailedText:["• Spearheaded educational outreach, facilitating workshops to mentor young girls interested in pursuing STEM careers.",
+    "• Planned and launched “Hack-a-Day”; a new, 24-hour hackathon, geared towards teaching programming fundamentals.",
+    "• Orchestrated a successful first iteration, resulting in a 177% increase in applications and a 150% boost in attendance for the"+
+    "second iteration which included career development sessions. "],  
+
+},
+
 
 {
     title:"Sept - Dec 2022",
     cardTitle:"RBC Design Thinking Program Member - London, Canada",
     cardSubtitle:"Royal Bank of Canada",
-    cardDetailedText:"Figma" , 
+    cardDetailedText:["• Leveraged design thinking methodologies to design a mobile app in Figma.",
+                        "• Designed “MentHer”; an online mentorship platform for women, as a proposed technical solution to the UN Sustainable Development Goal #5: Gender Inequality",] , 
 },
 
 {
     title:"May - Aug 2022",
     cardTitle:"Social Media Community Manager",
     cardSubtitle:"Northwest London Resource Center - London, Canada",
-    cardDetailedText:"Summer camp"
+    cardDetailedText:["• Organized the junior summer camp, alongside the Program Coordinator by planning 4 day, 6-week camp schedule.",
+    "• Ensured that the planned activities followed the set regulations, while keeping costs to a minimum.",
+    "• Led the social media campaign by photographing daily insights from the camp",
+    "• Created regular content based on the progress of the camp, in the form of videos and posters which became the connection between"+
+   " the camp, families and our sponsors.",
+    "• Increased the Instagram following by 100+ and Facebook reach by 5000+ through implementing an efficiently planned social media schedule."]
 },
 
 ]
@@ -51,7 +76,7 @@ let experiences = [{
 
 const Timeline =() =>{
     return(
-        <div className='w-5/6 pt-5' >
+        <div className='w-5/6 pt-7 pb-10' >
              <Chrono items={experiences}  mode="VERTICAL_ALTERNATING" enableOutline 
              mediaSettings={{ }} 
              theme={{
@@ -67,20 +92,30 @@ const Timeline =() =>{
              
 
              >
-                <div className='p-5'>
-                    <Link href="https://www.google.com">
-                        <img src=".././images/hackers.jpg"/>
-                        
-                    </Link>
-                    
-                    {/* <Link href="https://www.instagram.com"><a>123</a></Link> */}
-                    
-                </div>
+                {experiences.map((exp)=>(
+                     <div>
+                        {exp.cardDetailedText?.map((item, idx)=>(
+                            <p key={idx}>{item}</p>
+                        ))}
+                     
+                     {exp.showPosterIcon&&(
+
+                        <Link className='p-4 flex justify-right' href="https://drive.google.com/file/d/1rGWGHP0-T0LePBx-AwQncXXyGCMWlx8m/view?usp=sharing">
+                            <button className='flex justify-right'><Poster/></button>
+                        </Link>
+
+                     )}
+                     
+                     
+                     {/* <Link href="https://www.instagram.com"><a>123</a></Link> */}
+                     
+                 </div>
+
+                ))}
+               
                
 
-                <div>
-                    two
-                </div>
+                
 
 
                  {/* {(item, idx) => {
