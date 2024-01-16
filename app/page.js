@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { Link } from '@chakra-ui/react'
-import Footer from './components/footer/Footer.js'
+import Footer from './app/components/footer/Footer.js'
 import Timeline from './components/timeline/Timeline.js'
 import { Card, CardHeader, CardBody, CardFooter, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
 import Cards from './components/cards/Cards.js'
