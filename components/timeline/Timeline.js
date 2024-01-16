@@ -75,7 +75,7 @@ let experiences = [{
 
 const Timeline =() =>{
     return(
-        <div className='w-5/6 pt-7 pb-10 sm:text-black ' >
+        <div className='w-5/6 pt-7 pb-10 text-black ' >
              <Chrono items={experiences}  mode="VERTICAL_ALTERNATING" enableOutline 
              mediaSettings={{ }} 
              theme={{
@@ -92,9 +92,9 @@ const Timeline =() =>{
 
              >
                 {experiences.map((exp, idx)=>(
-                     <div className='sm:text-black' key={idx}>
+                     <div className='' key={idx}>
                         {exp.cardDetailedText?.map((item, idx)=>(
-                            <p className='sm:text-black' key={idx}>{item}</p>
+                            <p className='' key={idx}>{item}</p>
                         ))}
                      
                      {exp.showPosterIcon&&(
@@ -112,10 +112,6 @@ const Timeline =() =>{
 
                 ))}
                
-               
-
-                
-
 
                  {/* {(item, idx) => {
                     console.log(item);

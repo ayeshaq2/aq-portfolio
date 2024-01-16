@@ -50,7 +50,7 @@ export default function Home() {
 
       <div className='sm:space-x-1'>
 
-      <div className='flex justify-center space-x-4 space-y-2  mt-5  sm:space-x-1 sm:w-5/6'>
+      <div className='flex justify-center md:space-x-4 md:space-y-2  md:mt-5  sm:w-5/6'>
     <Link href="https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=sharing">
       <button className='bg-white font-medium text-black text-md py-2 px-4 mt-5 rounded cursor-pointer bg-white hover:bg-purple-950 hover:text-white' > Resume (pdf) </button>
     </Link>
