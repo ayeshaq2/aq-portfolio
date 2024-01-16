@@ -10,7 +10,7 @@ import {
     Email,
     Resume,
     Devpost,
-} from '../../app/components/Icons/icons.js'
+} from './Icons/icons.js'
 //import hackers from './hackers.jpg'
 
 
