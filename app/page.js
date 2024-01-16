@@ -61,7 +61,7 @@ export default function Home() {
       <button  className='bg-white font-medium text-black text-md py-2 px-4 mt-5 rounded cursor-pointer bg-white hover:bg-purple-950 hover:text-white' > Experience </button>
       </Link>
 
-      <Link href='#contact'>
+      <Link href='mailto:ayeshaqaisar002@gmail.com?subject=From Your Portfolio!&body='>
       <button  className='bg-white font-medium text-black text-md py-2 px-4 mt-5 rounded cursor-pointer bg-white hover:bg-purple-950 hover:text-white' > Contact </button>
       </Link>
       
