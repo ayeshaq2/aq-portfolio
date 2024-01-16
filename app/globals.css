@@ -25,3 +25,66 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.wave-animation {
+  background: linear-gradient(to right, #8323bb, #ce3782);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.background-main{
+  
+  background-color: rgb(254, 205, 211);
+  background-image: radial-gradient(at 68% 85%, rgb(251, 207, 232) 0, transparent 53%), radial-gradient(at 58% 96%, rgb(190, 24, 93) 0, transparent 29%), radial-gradient(at 96% 81%, rgb(196, 181, 253) 0, transparent 20%), radial-gradient(at 86% 8%, rgb(212, 212, 212) 0, transparent 19%), radial-gradient(at 82% 48%, rgb(139, 92, 246) 0, transparent 90%), radial-gradient(at 40% 93%, rgb(113, 113, 122) 0, transparent 54%);
+
+}
