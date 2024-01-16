@@ -165,8 +165,8 @@ const Cards = () =>{
            
             <div className='flex flex-wrap justify '>
                 <ul>
-                    {project.description?.map((item)=>(
-                        <li>{item}</li>
+                    {project.description?.map((item, idx)=>(
+                        <li key={idx}>{item}</li>
                     ))}
                 </ul>
             </div>
