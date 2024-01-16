@@ -63,7 +63,7 @@ const Skills = () => {
             {console.log("rendering")}
              {/* <div>pppppppppppppppppppppppppppp</div> */}
             {skills.map((skill, index)=>(
-                <Tag key={index} className='skill-bubble' style={bubbleStyles[index]}>{skill}</Tag>
+                <Tag key={index} className='skill-bubble text-black sm:text-black' style={bubbleStyles[index]}>{skill}</Tag>
             ))}
         </Box>
 

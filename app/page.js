@@ -48,7 +48,7 @@ export default function Home() {
         
       </div>
 
-   <div className='flex justify-center space-x-4'>
+   <div className='flex sm:flex-row justify-center space-x-4 space-y-2 sm:space-y-0 sm:space-x-4 mt-5 '>
     <Link href="https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=sharing">
       <button className='bg-white font-medium text-black text-md py-2 px-4 mt-5 rounded cursor-pointer bg-white hover:bg-purple-950 hover:text-white' > Resume (pdf) </button>
     </Link>
@@ -73,7 +73,7 @@ export default function Home() {
    <br/>
    <br/>
 
-    <div className='border border-slate-400 rounded-xl w-4/5 p-3 bg-purple-100 '>
+    <div className='border border-slate-400 rounded-xl w-4/5 p-3 bg-purple-100 sm:text-black '>
 
       <Card>
         
