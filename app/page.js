@@ -12,7 +12,7 @@ import Timeline from '../components/timeline/Timeline.js'
 import { Card, CardHeader, CardBody, CardFooter, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
 import Cards from '../components/cards/Cards.js'
 import Skills from '../components/skills/Skills.js'
-import {Grad, Code, Interest, Hobbies, Heart} from './components/Icons/icons.js'
+import {Grad, Code, Interest, Hobbies, Heart} from '../components/Icons/icons.js'
 
 export default function Home() {
   return (
