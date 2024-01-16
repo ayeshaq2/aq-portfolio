@@ -132,12 +132,19 @@ let projects = [
 const Cards = () =>{
     return(
         <div className='flex justify-center'>
-        <div className='w-4/5 box-border mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 grid-flow-row-dense flex-wrap align-items-start ' >
+        <div className='w-2/3 box-border mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 grid-flow-row-dense flex-wrap align-items-start ' >
 
        { projects.map( (project, index) =>(
             // <SimpleGrid spacing='3' className='flex flex-col justify-between'>
         <div key={index}  className=" flex flex-col border-2 border-pink-800 bg-white rounded-md shadow justify flex-wrap"  >
-            <img className='object-cover h-80 w-full mt-0 ' src={project.photo} />
+            
+            <Link href={project?.githubLink}>
+
+            <img className='object-cover h-80 w-full mt-0  filter brightness-50 contrast-75 saturate-75 hover:brightness-100 hover:contrast-100 hover:saturate-100 transition duration-300
+             ' src={project.photo} />
+            </Link>
+            
+            
               
             <div className=" flex justify-right px-2">
                 <h2 className="flex text-rose-800 text-2xl font-bold pt-2 " >{project.name}</h2>
