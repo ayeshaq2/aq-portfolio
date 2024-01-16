@@ -24,7 +24,7 @@ import {
 const Footer = () => {
     return (
       <>
-      <div className='flex sm:flex-wrap justify-center space-x-4 md:space-x-20 backdrop-blur-md md:py-4 sm:py-4  md:pb-5 sm:pb-5 '>
+      <div className='flex sm:flex-wrap justify-center space-x-4 md:space-x-20 backdrop-blur-md md:py-4 sm:py-4  md:pb-5 pb-5 pt-2 '>
 
       <Link className='hover:opacity-100 opacity-75' href='https://github.com/ayeshaq2'>
           <Github></Github>
