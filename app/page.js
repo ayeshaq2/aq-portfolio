@@ -89,16 +89,16 @@ export default function Home() {
             <Box>
               <Heading  size='xs' textTransform='uppercase'></Heading>
               <ul className='list-none'>
-                <li className='pt-4 pb-4 sm:text-black'> <i className='inline-block'><Grad/></i> &nbsp;&nbsp; I&apos;m a third year software engineering student at <a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </li>
+                <li className='pt-4 pb-4 text-gray-800'> <i className='inline-block'><Grad/></i> &nbsp;&nbsp; I&apos;m a third year software engineering student at <a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </li>
 
-                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Code/></i> &nbsp;&nbsp; While I was terrified to take my first (mandatory) coding class in first year, I&apos;ve come to really enjoy coding and developing solutions.</li>
-                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Interest/></i> &nbsp;&nbsp; I&apos;m also interested in business analysis and, as everyone, have recently tried to get my foot in AI through my research experience.</li>
-                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Hobbies/></i>  &nbsp;&nbsp;In my free time, I like to read (mostly fiction!), do calligraphy and even go on beautiful long hikes!</li>
-                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Heart/></i> &nbsp;&nbsp; If you have similar interests or want to chat about my experiences, please feel free to reach out to me at ayeshaqaisar002@gmail.com !</li>
+                <li className='pt-2 pb-2  text-gray-800'><i className='inline-block'><Code/></i> &nbsp;&nbsp; While I was terrified to take my first (mandatory) coding class in first year, I&apos;ve come to really enjoy coding and developing solutions.</li>
+                <li className='pt-2 pb-2  text-gray-800'><i className='inline-block'><Interest/></i> &nbsp;&nbsp; I&apos;m also interested in business analysis and, as everyone, have recently tried to get my foot in AI through my research experience.</li>
+                <li className='pt-2 pb-2  text-gray-800'><i className='inline-block'><Hobbies/></i>  &nbsp;&nbsp;In my free time, I like to read (mostly fiction!), do calligraphy and even go on beautiful long hikes!</li>
+                <li className='pt-2 pb-2  text-gray-800'><i className='inline-block'><Heart/></i> &nbsp;&nbsp; If you have similar interests or want to chat about my experiences, please feel free to reach out to me at ayeshaqaisar002@gmail.com !</li>
 
               </ul>
               
-              <p className='italic text-lg text-center pt-5  sm:text-black'>(Updated version of this website coming soon!)</p>
+              <p className='italic text-lg text-center pt-5  text-gray-800'>(Updated version of this website coming soon!)</p>
             </Box>
             
 
