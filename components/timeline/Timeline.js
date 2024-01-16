@@ -94,7 +94,7 @@ const Timeline =() =>{
                 {experiences.map((exp, idx)=>(
                      <div key={idx}>
                         {exp.cardDetailedText?.map((item, idx)=>(
-                            <p key={idx}>{item}</p>
+                            <p className='sm:text-black' key={idx}>{item}</p>
                         ))}
                      
                      {exp.showPosterIcon&&(
