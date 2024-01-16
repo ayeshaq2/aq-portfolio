@@ -48,7 +48,7 @@ export default function Home() {
         
       </div>
 
-      <div className='sm:space-x-1'>
+      <div className='sm:space-x-2'>
 
       <div className='flex justify-center md:space-x-4 md:space-y-2  md:mt-5  sm:w-5/6'>
     <Link href="https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=sharing">

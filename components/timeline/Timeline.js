@@ -75,12 +75,12 @@ let experiences = [{
 
 const Timeline =() =>{
     return(
-        <div className='w-5/6 pt-7 pb-10 sm:text-black ' >
+        <div className='w-5/6 pt-7 pb-10 text-slate-800 ' >
              <Chrono items={experiences}  mode="VERTICAL_ALTERNATING" enableOutline 
              mediaSettings={{ }} 
              theme={{
                 primary:"black",
-                secondary:'black', 
+                secondary:'transparent', 
                 titleColor:'black',
                 titleColorActive:'black',
                 cardSubtitleColor:'black',
