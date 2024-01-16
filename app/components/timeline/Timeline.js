@@ -32,10 +32,9 @@ let experiences = [{
     title:"Dec 2023 - Present",
     cardTitle:"ADA Program Mentor",
     cardSubtitle:"Women In Tech Society - London, ON, Canada",
-    cardDetailedText:["• Received the Bill and Barbara Etherington fellowship, awarded to the top 4 research students, by achieving a 75%+ average.",
-                    "• Conducted in-depth NLP research on Topic Modelling, utilizing NLP libraries and algorithms to analyse student survey data.",
-                " • Developed web-scrapers to create SWKT (Software keyword Text), a unique, undergraduate software engineering dataset.",
-            "• Currently conducting further research in machine learning to train an AI transformer model for the software domain"],
+    cardDetailedText:["• Mentoring a group of female students enrolled in first and second year STEM programs",
+                    "•Offering guidance and support in the development of a full-stack web application based on a given prompt.",
+                ],
 
 
 },
