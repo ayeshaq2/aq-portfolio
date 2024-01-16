@@ -48,7 +48,9 @@ export default function Home() {
         
       </div>
 
-   <div className='flex sm:flex-row justify-center space-x-4 space-y-2 sm:space-y-0 sm:space-x-4 mt-5 sm:w-5/6 '>
+      <div className='sm:w-4/5 sm:space-x-1'>
+
+      <div className='flex  justify-center space-x-4 space-y-2  mt-5  '>
     <Link href="https://drive.google.com/file/d/1S37MLLszvAYqw6e5T2OEtfiHqN6Y5xSe/view?usp=sharing">
       <button className='bg-white font-medium text-black text-md py-2 px-4 mt-5 rounded cursor-pointer bg-white hover:bg-purple-950 hover:text-white' > Resume (pdf) </button>
     </Link>
@@ -67,6 +69,10 @@ export default function Home() {
       
    </div>
 
+      </div>
+
+   
+
    <h2 className='text-3xl font-bold pt-4 mx-20 text-rose-800'>About Me</h2>
    <div id="about-me" className='flex justify-center pt-5'>
    
@@ -83,16 +89,16 @@ export default function Home() {
             <Box>
               <Heading  size='xs' textTransform='uppercase'></Heading>
               <ul className='list-none'>
-                <li className='pt-4 pb-4'> <i className='inline-block'><Grad/></i> &nbsp;&nbsp; I&apos;m a third year software engineering student at <a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </li>
+                <li className='pt-4 pb-4 sm:text-black'> <i className='inline-block'><Grad/></i> &nbsp;&nbsp; I&apos;m a third year software engineering student at <a className='hover:text-purple-700 hover:font-bold' href="https://www.uwo.ca/index.html">The University of Western Ontario</a> in London, Ontario, Canada.  </li>
 
-                <li className='pt-2 pb-2'><i className='inline-block'><Code/></i> &nbsp;&nbsp; While I was terrified to take my first (mandatory) coding class in first year, I&apos;ve come to really enjoy coding and developing solutions.</li>
-                <li className='pt-2 pb-2'><i className='inline-block'><Interest/></i> &nbsp;&nbsp; I&apos;m also interested in business analysis and, as everyone, have recently tried to get my foot in AI through my research experience.</li>
-                <li className='pt-2 pb-2'><i className='inline-block'><Hobbies/></i>  &nbsp;&nbsp;In my free time, I like to read (mostly fiction!), do calligraphy and even go on beautiful long hikes!</li>
-                <li className='pt-2 pb-2'><i className='inline-block'><Heart/></i> &nbsp;&nbsp; If you have similar interests or want to chat about my experiences, please feel free to reach out to me at ayeshaqaisar002@gmail.com !</li>
+                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Code/></i> &nbsp;&nbsp; While I was terrified to take my first (mandatory) coding class in first year, I&apos;ve come to really enjoy coding and developing solutions.</li>
+                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Interest/></i> &nbsp;&nbsp; I&apos;m also interested in business analysis and, as everyone, have recently tried to get my foot in AI through my research experience.</li>
+                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Hobbies/></i>  &nbsp;&nbsp;In my free time, I like to read (mostly fiction!), do calligraphy and even go on beautiful long hikes!</li>
+                <li className='pt-2 pb-2  sm:text-black'><i className='inline-block'><Heart/></i> &nbsp;&nbsp; If you have similar interests or want to chat about my experiences, please feel free to reach out to me at ayeshaqaisar002@gmail.com !</li>
 
               </ul>
               
-              <p className='italic text-lg text-center pt-5'>(Updated version of this website coming soon!)</p>
+              <p className='italic text-lg text-center pt-5  sm:text-black'>(Updated version of this website coming soon!)</p>
             </Box>
             
 

@@ -92,7 +92,7 @@ const Timeline =() =>{
 
              >
                 {experiences.map((exp, idx)=>(
-                     <div key={idx}>
+                     <div className='sm:text-black' key={idx}>
                         {exp.cardDetailedText?.map((item, idx)=>(
                             <p className='sm:text-black' key={idx}>{item}</p>
                         ))}
