@@ -19,7 +19,7 @@ import {
     Instagram,
     Email,
     Resume,
-} from '../../app/components/Icons/icons.js'
+} from '../Icons/icons.js'
 
 const Footer = () => {
     return (

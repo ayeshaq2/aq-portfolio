@@ -1,6 +1,6 @@
 import React from 'react'
 import {Chrono} from "react-chrono";
-import {Poster} from '.././Icons/icons.js'
+import {Poster} from '../Icons/icons.js'
 import {Link} from '@chakra-ui/react'
 
 
